@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const sequelize = require('src/database/db');
+const sequelize = require('../database/db');
 
 const Sensor = sequelize.define('Sensor', {
   equipment_id: {

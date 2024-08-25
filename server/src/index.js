@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const sequelize = require('./database/db');
 const Sensor = require('./models/Sensor');
 const SensorData = require('./models/SensorData');
@@ -7,6 +8,7 @@ const SensorData = require('./models/SensorData');
 const app = express();
 const PORT = 3000;
 
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get('/ping', (req, res) => {
