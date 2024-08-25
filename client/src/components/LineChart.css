@@ -1,0 +1,12 @@
+.line-chart-container {
+  width: 80%;
+  margin: 0 auto; 
+}
+
+.line-chart-container canvas {
+  display: flex;
+  justify-content: start;
+  width: 100% !important;
+  height: auto !important;
+}
+

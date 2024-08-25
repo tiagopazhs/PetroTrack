@@ -1,6 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../database/db');
-const Sensor = require('./Sensor');
+const Sensor = require('../models/Sensor');
 
 const SensorData = sequelize.define('SensorData', {
   timestamp: {
